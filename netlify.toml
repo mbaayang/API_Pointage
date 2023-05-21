@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "dist" # ou le répertoire de construction de votre application
+
+[[plugins]]
+  package = "@netlify/plugin-functions-core"
+
+[build.environment]
+  NODE_ENV = "production"
